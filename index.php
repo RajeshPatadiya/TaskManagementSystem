@@ -1,6 +1,3 @@
-<?php
-    include("db_conn.php");
-?>
 <!DOCTYPE HTML>
     <head>
         <meta charset="UTF-8">
@@ -9,7 +6,6 @@
         <meta name="description" content="Task Management System For Overseas Engineers">
         <meta name="author" content="Berk Cetinsaya">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
         <link href="assets/css/modern-business.css" rel="stylesheet">
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

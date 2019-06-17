@@ -1,5 +1,6 @@
 <?php
     include("db_conn.php");
+    
     $result = $db->query("select * from task GROUP BY idtask DESC");
         while ($row = $result->fetch_assoc()) {
             $task_id       = $row['idtask'];

@@ -3,22 +3,20 @@
 	
 ?>
 <!DOCTYPE HTML>
-<head>
-    <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link href="css/modern-business.css" rel="stylesheet">
-	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<title>
-		Task Management For Overseas
-    </title>
-    
-</head>
-<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Task Management System For Overseas Engineers">
+        <meta name="author" content="Berk Cetinsaya">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/modern-business.css" rel="stylesheet">
+        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="assets/js/jquery.min.js"></script>
+        <title>
+            Task Management System For Overseas Engineers
+        </title>
+	</head>
     <body>
 	<!-- Navigation -->
 	<nav style="background-color:#800000;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -31,16 +29,16 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Task Management For Overseas</a>
+					<a class="navbar-brand" href="index.php">Task Management System For Overseas Engineers</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="user.php">User List</a>
+							<a href="task.php">Tasks</a>
 						</li>
 						<li>
-							<a href="index.php">Tasks</a>
+							<a href="user.php">Users</a>
 						</li>
 						<li>
 							<a href="contact.php">Contact</a>
@@ -56,16 +54,16 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<div class="fill" style="background-image:url('ship3.jpg');"></div>
+					<div class="fill" style="background-image:url('assets/img/ship3.jpg');"></div>
 				</div>
 				<div class="item">
-					<div class="fill" style="background-image:url('ship.jpg');"></div>
+					<div class="fill" style="background-image:url('assets/img/ship.jpg');"></div>
 				</div>
 				<div class="item">
-					<div class="fill" style="background-image:url('ship2.jpg');"></div>
+					<div class="fill" style="background-image:url('assets/img/ship2.jpg');"></div>
 				</div>
 				<div class="item">
-					<div class="fill" style="background-image:url('ship1.jpg');"></div>
+					<div class="fill" style="background-image:url('assets/img/ship1.jpg');"></div>
 				</div>
 			</div>
 			<!-- Controls -->
@@ -117,7 +115,7 @@
 		<footer>
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <b>Berk Cetinsaya</b> 2019</p>
+					<p>Copyright <b>Berk Cetinsaya</b> &copy; <?php echo date("Y"); ?></p>
                 </div>
             </div>
         </footer>

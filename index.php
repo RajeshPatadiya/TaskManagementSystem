@@ -1,15 +1,5 @@
 <?php
     include("db_conn.php");
-    $result = $db->query("select * from task GROUP BY idtask DESC");
-        while ($row = $result->fetch_assoc()) {
-            $task_id       = $row['idtask'];
-            $task_name     = $row['name'];
-            $task_duration = $row['duration'];
-            $date          = $row['date'];
-            $user_id       = $row['userid'];
-        }
-        $result->free();
-    $db->close();
 ?>
 <!DOCTYPE HTML>
     <head>
@@ -19,6 +9,8 @@
         <meta name="description" content="Task Management System For Overseas Engineers">
         <meta name="author" content="Berk Cetinsaya">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
         <link href="assets/css/modern-business.css" rel="stylesheet">
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <script src="assets/js/jquery.min.js"></script>
@@ -94,18 +86,29 @@
                         Task Management System For Overseas Engineers
 					</h1>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4><i class="fa fa-fw fa-arrow-circle-o-right"></i>Tasks</h4>
+							<h4><i class="fa fa-fw fa-check"></i>Tasks</h4>
 						</div>
 						<div class="panel-body">
 							<p>For the tasks created, please click below.</p>
 							<a href="task.php" class="btn btn-default btn-block">Tasks</a>
 						</div>
 					</div>
+                </div>
+                <div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-user"></i>Users</h4>
+						</div>
+						<div class="panel-body">
+							<p>If you want to see the user list, please click below.</p>
+							<a href="user.php" class="btn btn-default btn-block">Users</a>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4><i class="fa fa-fw fa-compass"></i>Contact Information</h4>
@@ -115,20 +118,21 @@
 							<a href="contact.php" class="btn btn-default btn-block">Contact</a>
 						</div>
 					</div>
-				</div>
+                </div>
+                
 			</div>
         <!-- /.row -->
         <hr>
             <footer>
                 <div class="row text-center">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; <b>Berk Cetinsaya</b> 2019</p>
+                        <p>Copyright <b>Berk Cetinsaya</b> &copy; <?php echo date("Y"); ?></p>
                     </div>
                 </div>
             </footer>
         </div>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script>
             $('.carousel').carousel({
                 interval: 5000 //changes the speed

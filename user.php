@@ -18,9 +18,8 @@
 			<!-- Page Heading/Breadcrumbs -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header">Users
-						<small>TMSFOE</small>
-					</h1>
+					<h3 class="page-header">Users
+					</h3>
 					<ol class="breadcrumb">
 						<li><a style="color:#800000;" href="index.php">TMSFOE</a>
 						</li>
@@ -161,7 +160,7 @@
 								<label for="filterType" class="col-2 col-form-label">Type</label>
 									<select class="form-control" id="filterType" name="filterType">
 										<?php
-											$result = $db->query("select * from user");
+											$result = $db->query("select * from user group by type having count(1)");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];
@@ -183,7 +182,7 @@
 								<label for="filterUserID" class="col-2 col-form-label">User ID</label>
 									<select class="form-control" id="filterUserID" name="filterUserID">
 										<?php
-											$result = $db->query("select * from user");
+											$result = $db->query("select * from user group by iduser having count(1)");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];
@@ -204,7 +203,7 @@
 								<label for="filterLastname" class="col-2 col-form-label">Last name</label>
 									<select class="form-control" id="filterLastname" name="filterLastname">
 										<?php
-											$result = $db->query("select * from user");
+											$result = $db->query("select * from user group by lname having count(1)");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];
@@ -223,11 +222,11 @@
 			<hr>
 			<div class="row">
 				<div class="col-xs-6 col-sm-6 col-lg-6">
-						<a class="btn btn-success col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" href="createUser.php">Create a User</a>				
+						<a class="btn btn-success col-xs-9 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" href="createUser.php">Create User</a>				
 					
 				</div>
 				<div class="col-xs-6 col-sm-6 col-lg-6">
-						<a class="btn btn-info col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" href="user.php">Clear Filter</a>				
+						<a class="btn btn-info col-xs-9 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" href="user.php">Clear Filter</a>				
 					
 				</div>
 			</div>

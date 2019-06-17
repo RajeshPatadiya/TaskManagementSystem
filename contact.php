@@ -9,11 +9,10 @@ include_once "header.php";
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Contact
-                    <small>Task Management System For Overseas Engineers</small>
-                </h1>
+                <h3 class="page-header">Contact
+                </h3>
                 <ol class="breadcrumb">
-                    <li><a style="color:#800000;" href="index.php">Task Management System For Overseas Engineers</a>
+                    <li><a style="color:#800000;" href="index.php">TMSFOE</a>
                     </li>
                     <li class="active">Contact</li>
                 </ol>
@@ -52,4 +51,4 @@ include_once "header.php";
         </div>
         <!-- /.row -->
         
-        <?php include_once("footer.php");?>
+        <?php include_once "footer.php";?>

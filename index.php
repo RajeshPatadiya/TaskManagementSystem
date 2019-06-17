@@ -70,4 +70,4 @@ include_once "header.php";
                 
 			</div>
         <!-- /.row -->
-        <?php include_once("footer.php");?>
+        <?php include_once "footer.php";?>

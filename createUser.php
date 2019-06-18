@@ -3,21 +3,16 @@
     $page_title = "Create a User";
     include_once "header.php";
 ?>
-		<!-- Page Content -->
-		<div class="container">
-			<!-- Page Heading/Breadcrumbs -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h3 class="page-header">Create a User
-					</h3>
-					<ol class="breadcrumb">
-						<li><a style="color:#800000;" href="user.php">Users</a>
-						</li>
-						<li class="active">Create a User</li>
-					</ol>
-				</div>
-			</div>
-            <!-- /.row -->	
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">Create a User</h3>
+                    <ol class="breadcrumb">
+                        <li><a style="color:#800000;" href="user.php">Users</a></li>
+                        <li class="active">Create a User</li>
+                    </ol>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <?php
@@ -25,15 +20,15 @@
                             $inputUserType = $_POST['inputUserType'];
                             $inputUserFirstname = $_POST['inputUserFirstname'];
                             $inputUserLastname = $_POST['inputUserLastname'];
-                            $exists     = 0;
+                            $exists = 0;
                             $fields = array('inputUserType','inputUserFirstname','inputUserLastname');
-                            foreach($fields as $fieldname) { //Loop trough each field
-                              if(empty($_POST[$fieldname])) {
-                                $exists = 1;
-                              }
+                            foreach($fields as $fieldname) {
+                                if(empty($_POST[$fieldname])) {
+                                    $exists = 1;
+                                }
                             }
                             if($db->connect_errno > 0){
-                              die('Unable to connect to database [' . $db->connect_error . ']');
+                                die('Unable to connect to database [' . $db->connect_error . ']');
                             }
                             $result = $db->query("SELECT fname from user WHERE fname = '{$inputUserFirstname}' AND lname = '{$inputUserLastname}' LIMIT 1");
                             if ($result->num_rows == 1) 
@@ -62,14 +57,12 @@
                         <div class="col-xs-12 col-sm-12 col-lg-12">
                             <div class="form-group">
                                 <label for="inputUserType" class="col-2 col-form-label">User Type</label>
-                                <div class="col-10">
-                                    <select class="form-control" id="inputUserType" name="inputUserType">
-                                        <option selected>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
+                                <select class="form-control" id="inputUserType" name="inputUserType">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="inputUserFirstname">First Name</label>
@@ -79,14 +72,9 @@
                                 <label for="inputUserLastname">Last Name</label>
                                 <input type="text" class="form-control" id="inputUserLastname" name="inputUserLastname" placeholder="Enter User's Last Name">
                             </div>
-                            <button name="createUserButton" type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button name="createUserButton" type="submit" class="btn btn-success btn-block"><i class="fa fa-fw fa-plus"></i>Create User</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-<?php
-    
-
-    include_once "footer.php";
-?>
+<?php include_once "footer.php"; ?>

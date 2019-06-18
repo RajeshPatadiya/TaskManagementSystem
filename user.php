@@ -160,7 +160,7 @@
 								<label for="filterType" class="col-2 col-form-label">Type</label>
 									<select class="form-control" id="filterType" name="filterType">
 										<?php
-											$result = $db->query("select * from user group by type having count(1)");
+											$result = $db->query("select distinct type from user group by type asc");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];
@@ -182,7 +182,7 @@
 								<label for="filterUserID" class="col-2 col-form-label">User ID</label>
 									<select class="form-control" id="filterUserID" name="filterUserID">
 										<?php
-											$result = $db->query("select * from user group by iduser having count(1)");
+											$result = $db->query("select distinct iduser from user group by iduser asc");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];
@@ -203,7 +203,7 @@
 								<label for="filterLastname" class="col-2 col-form-label">Last name</label>
 									<select class="form-control" id="filterLastname" name="filterLastname">
 										<?php
-											$result = $db->query("select * from user group by lname having count(1)");
+											$result = $db->query("select distinct lname from user group by lname asc");
 											while($row = $result->fetch_assoc()){
 												$user_id        = $row['iduser'];
 												$first_name     = $row['fname'];

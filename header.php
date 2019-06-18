@@ -6,17 +6,14 @@
         <meta name="description" content="Task Management System For Overseas Engineers">
         <meta name="author" content="Berk Cetinsaya">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
         <link href="assets/css/modern-business.css" rel="stylesheet">
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <script src="assets/js/jquery.min.js"></script>
         <title><?php echo $page_title; ?></title>
     </head>
     <body>
-        <!-- Navigation -->
         <nav style="background-color:#800000;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -26,7 +23,6 @@
                     </button>
                     <a class="navbar-brand" href="index.php"><i class="fa fa-fw fa-anchor"></i>TMSFOE</a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -40,7 +36,5 @@
                         </li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>

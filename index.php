@@ -1,10 +1,8 @@
 <?php
-$page_title = "Task Management System For Overseas Engineers";
-include_once "header.php";
+    $page_title = "Task Management System For Overseas Engineers";
+    include_once "header.php";
 ?>
-        <!-- Header Carousel -->
         <header id="myCarousel" class="carousel slide">
-            <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="fill" style="background-image:url('assets/img/ship3.jpg');"></div>
@@ -22,7 +20,6 @@ include_once "header.php";
                     <div class="fill" style="background-image:url('assets/img/ship31.jpg');"></div>
                 </div>
             </div>
-            <!-- Controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="icon-prev"></span>
             </a>
@@ -30,7 +27,6 @@ include_once "header.php";
                 <span class="icon-next"></span>
             </a>
         </header>
-        <!-- Page Content -->
 		<div class="container">
 			<div class="row">
 				<hr>
@@ -67,7 +63,5 @@ include_once "header.php";
 						</div>
 					</div>
                 </div>
-                
 			</div>
-        <!-- /.row -->
-        <?php include_once "footer.php";?>
+<?php include_once "footer.php";?>

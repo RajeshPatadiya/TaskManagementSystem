@@ -1,5 +1,5 @@
 <?php
-    $page_title = "Task Management System For Overseas Engineers";
+    $page_title = "TMS";
     include_once "header.php";
 ?>
         <header id="myCarousel" class="carousel slide">

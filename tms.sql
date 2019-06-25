@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `taskManagement`
 --
-CREATE DATABASE IF NOT EXISTS `taskManagement` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `taskManagement`;
+ CREATE DATABASE IF NOT EXISTS `tms` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ USE `tms`;
 
 -- --------------------------------------------------------
 

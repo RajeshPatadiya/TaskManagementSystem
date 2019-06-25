@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Task Management System For Overseas Engineers">
+        <meta name="description" content="Task Management System">
         <meta name="author" content="Berk Cetinsaya">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/modern-business.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><i class="fa fa-fw fa-anchor"></i>TMSFOE</a>
+                    <a class="navbar-brand" href="index.php"><i class="fa fa-fw fa-tasks"></i>TMS</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">

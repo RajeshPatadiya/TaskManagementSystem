@@ -19,10 +19,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `taskManagement`
+-- Database: `tms`
 --
-CREATE DATABASE IF NOT EXISTS `taskManagement` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `taskManagement`;
 
 -- --------------------------------------------------------
 

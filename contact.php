@@ -2,13 +2,13 @@
 $page_title = "Contact";
 include_once "header.php";
 ?>
-<div style="color:#B6DCFE;" class="container">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h3 style="color:#B6DCFE;" class="page-header">Contact</h3>
-            <ol style="color:#B6DCFE;" class="breadcrumb">
-                <li><a style="color:#B6DCFE;" href="index.php">SayChat</a></li>
-                <li style="color:#B6DCFE;" class="active">Contact</li>
+            <h3 class="page-header">Contact</h3>
+            <ol class="breadcrumb">
+                <li><a style="color:#800000;" href="index.php">TMS</a></li>
+                <li class="active">Contact</li>
             </ol>
         </div>
     </div>
@@ -19,7 +19,7 @@ include_once "header.php";
         <div class="col-md-4">
             <h3>Contact Details</h3>
             <p>Little Rock <br>Arkansas, United States<br></p>
-            <p><i class="fa fa-envelope-o"></i><abbr title="Email">E</abbr>: <a style="color:#800000;" href="mailto:info@tmsfoe.com">info@tmsfoe.com</a></p>
+            <p><i class="fa fa-envelope-o"></i><abbr title="Email">E</abbr>: <a style="color:#800000;" href="mailto:info@tms.com">info@tms.com</a></p>
             <ul class="list-unstyled list-inline list-social-icons">
                 <li>
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>

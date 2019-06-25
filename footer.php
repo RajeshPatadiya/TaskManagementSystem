@@ -10,7 +10,7 @@
             <script src="assets/js/jquery.js"></script>
             <script src="assets/js/bootstrap.min.js"></script>
             <?php
-            if ($page_title == "SayChat") { ?>
+            if ($page_title == "TMS") { ?>
                 <script>
                     $('.carousel').carousel({
                         interval: 5000
